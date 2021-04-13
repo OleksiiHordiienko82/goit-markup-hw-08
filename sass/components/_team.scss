@@ -1,0 +1,110 @@
+.team {
+  padding: 60px 0;
+  background: #f5f4fa;
+}
+.team-list__item {
+  margin-top: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list__item img {
+  max-width: 100%;
+  height: auto;
+}
+.team-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-headers-color);
+}
+
+.our-team-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-headers-color);
+
+  margin-bottom: 10px;
+}
+
+.description-team {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--basic-content-color);
+
+  margin-bottom: 16px;
+}
+.team-list__item ul {
+  display: flex;
+  justify-content: center;
+}
+.team-icon-container:not(:last-child) {
+  margin-right: 10px;
+}
+.team-icon-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--common-grey);
+  transition: color var(--duration) var(--timing-function), background-color var(--duration) var(--timing-function);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: var(--accent-color);
+  }
+}
+.team-icon-container-img {
+  fill: currentColor;
+}
+.team-list-content-wrapper {
+  padding: 30px 0 24px 0;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .team-list__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
+  .team-list__item {
+    margin-top: 50px;
+  }
+  .team-list__item {
+    width: calc(100% / 4 - 30px);
+  }
+  .team {
+    padding: 94px 0;
+  }
+  .team-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
