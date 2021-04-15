@@ -39,6 +39,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .about-list__title {
     text-align: left;
   }

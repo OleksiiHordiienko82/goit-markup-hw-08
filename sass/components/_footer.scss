@@ -20,7 +20,6 @@
   }
 }
 .footer-address {
-  margin-bottom: 60px;
   .link {
     display: block;
     font-family: Roboto;
@@ -37,6 +36,9 @@
   .address-list__footer {
     color: #fff;
   }
+}
+.address-list-link {
+  margin-bottom: 60px;
 }
 .address-list__item:not(:last-child) {
   margin-bottom: 8px;
@@ -154,13 +156,15 @@
   margin-left: 10px;
 }
 @media screen and(min-width: 768px) {
+  .address-list-link,
+  .social-list-link {
+    margin-bottom: 0;
+  }
   .footer-links-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
-  }
-  .address-list-link {
-    margin-right: 165px;
+    margin-bottom: 60px;
   }
 }
 @media screen and(min-width: 1200px) {
@@ -176,6 +180,7 @@
   }
   .footer-links-wrapper {
     margin-right: 93px;
+    margin-bottom: 0;
   }
   .footer-form-wrapper {
     margin: 0;
